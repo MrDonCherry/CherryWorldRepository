@@ -13,6 +13,7 @@
     xmlns:org.polarsys.capella.core.data.information="http://www.polarsys.org/capella/core/information/1.4.0"
     xmlns:org.polarsys.capella.core.data.information.datatype="http://www.polarsys.org/capella/core/information/datatype/1.4.0"
     xmlns:org.polarsys.capella.core.data.information.datavalue="http://www.polarsys.org/capella/core/information/datavalue/1.4.0"
+    xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/1.4.0"
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/1.4.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.4.0"
@@ -88,6 +89,24 @@
             id="e015e473-90e7-40ee-b671-a92de15875c5" name="Reusability"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="9614480f-436e-4d51-9a66-00043a9c0ccd" name="Maintainability"/>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="d6633e16-3257-48e8-b50a-a7e21fb50e09" name="Values">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="75a0918c-2f02-48ef-8f73-bfaea09b408b" included="#65c0014c-45a1-4ba6-97d0-8923359142d3"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="65c0014c-45a1-4ba6-97d0-8923359142d3" name="Sustainability">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="643f2dc9-473c-4e2d-9e57-900ef4fd8431" included="#69a52918-e39a-466a-aa22-3a0a1545b12d"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="80ecf3b7-006c-4912-8e23-535892461f14" included="#b469f43c-fbdf-41f7-911d-4b8310e5d0ee"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="8654d15a-f082-4c92-b4bf-ebe75fdcd9f0" included="#9614480f-436e-4d51-9a66-00043a9c0ccd"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="69a52918-e39a-466a-aa22-3a0a1545b12d" name="Repairability"/>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="b469f43c-fbdf-41f7-911d-4b8310e5d0ee" name="Standardization"/>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="d27096ab-9e12-4d9b-be4a-ca15ff5392d6" name="Interfaces"/>
@@ -103,12 +122,37 @@
             name="Countries" abstractType="#f76da7c5-0e4f-40fe-992f-731957fdac02"/>
         <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="505bb751-4061-4079-b81c-ec9b24982e52"
             name="existing knowledge" abstractType="#3d529f28-65ea-450b-bfa3-2251d567cfe8"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="678fd2c4-e795-486c-ba51-f78b5da76a76"
+            name="Product developer" abstractType="#6a85d2dc-d968-40aa-8281-c2c3cb9c1633"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="90db2b41-1d97-4f91-99c8-3ff3c4800dda"
+            name="OA 5" abstractType="#b2602beb-b2a5-4be5-8629-11662f9bf83d"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="321813d5-ddd4-46aa-a8bb-f183d6b06462"
+            name="Organzizsation Product deployment" abstractType="#7903fcc8-c0fa-4f8f-bd70-17c4ee52e5e4"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="d93f6653-a037-4f0a-afa8-373ca6791554"
+            name="Process development" abstractType="#991211a0-081d-4dba-9a69-99f4a5e00cbc"/>
+        <ownedParts xsi:type="org.polarsys.capella.core.data.cs:Part" id="2981f975-aea3-4f98-82eb-2bd00219b35f"
+            name="Tooldevelopment" abstractType="#302008e3-283b-45f1-bc92-459c12412f49"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="99257583-0c8d-4eb1-bbbb-64d06be8ad4b"
             name="Developer" actor="true" human="true"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="f76da7c5-0e4f-40fe-992f-731957fdac02"
             name="Countries"/>
         <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="3d529f28-65ea-450b-bfa3-2251d567cfe8"
             name="existing knowledge"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="6a85d2dc-d968-40aa-8281-c2c3cb9c1633"
+            name="Product developer" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="b2602beb-b2a5-4be5-8629-11662f9bf83d"
+            name="OA 5" actor="true" human="true"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="7903fcc8-c0fa-4f8f-bd70-17c4ee52e5e4"
+            name="Organzizsation Product deployment">
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="e4c0332e-f6be-43b6-aede-d5828b530577"
+              name="Product development organizsation" abstractType="#c33885a9-ed71-4dd3-aa8c-50aa8d08dcfb"/>
+          <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="c33885a9-ed71-4dd3-aa8c-50aa8d08dcfb"
+              name="Product development organizsation"/>
+        </ownedEntities>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="991211a0-081d-4dba-9a69-99f4a5e00cbc"
+            name="Process development"/>
+        <ownedEntities xsi:type="org.polarsys.capella.core.data.oa:Entity" id="302008e3-283b-45f1-bc92-459c12412f49"
+            name="Tooldevelopment"/>
       </ownedEntityPkg>
     </ownedArchitectures>
     <ownedArchitectures xsi:type="org.polarsys.capella.core.data.ctx:SystemAnalysis"
