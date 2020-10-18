@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ASCII"?>
+<configuration:ProrToolExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0" xmlns:headline="http://pror.org/presentation/headline" xmlns:id="http://pror.org/presentation/id" xmlns:reqif="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd">
+  <specViewConfigurations>
+    <specification href="RMF_CustomerRequirementsSpecification.reqif#rmf-4bf26d3a-4abf-40d7-ac4d-5cbae08ebd02"/>
+    <columns label="ID" width="48"/>
+    <columns label="Description" width="457"/>
+    <columns label="Status" width="77"/>
+    <columns label="aCriticality" width="100"/>
+    <leftHeaderColumn label="Lead Header Column" width="50"/>
+  </specViewConfigurations>
+  <specViewConfigurations>
+    <specification href="RMF_CustomerRequirementsSpecification.reqif#rmf-2ba52c1d-09e3-484c-9bc3-408f81ca9a1d"/>
+    <columns label="ID" width="164"/>
+    <columns label="Description" width="602"/>
+    <leftHeaderColumn label="Lead Header Column" width="30"/>
+  </specViewConfigurations>
+  <generalConfiguration>
+    <labelConfiguration>
+      <defaultLabel>ID</defaultLabel>
+      <defaultLabel>Description</defaultLabel>
+    </labelConfiguration>
+  </generalConfiguration>
+  <presentationConfigurations>
+    <presentationConfigurations xsi:type="headline:HeadlineConfiguration" size="16">
+      <datatype xsi:type="reqif:DatatypeDefinitionString" href="RMF_CustomerRequirementsSpecification.reqif#rmf-91af4973-33cb-4ec5-9921-a1a3da728fec"/>
+    </presentationConfigurations>
+    <presentationConfigurations xsi:type="headline:HeadlineConfiguration" size="16">
+      <datatype xsi:type="reqif:DatatypeDefinitionString" href="RMF_CustomerRequirementsSpecification.reqif#rmf-a9729862-1ce3-4778-9e08-6470b37f5dd4"/>
+    </presentationConfigurations>
+    <presentationConfigurations xsi:type="headline:HeadlineConfiguration" size="12">
+      <datatype xsi:type="reqif:DatatypeDefinitionString" href="RMF_CustomerRequirementsSpecification.reqif#rmf-072922ed-83e2-4602-a861-46caf3d9ee43"/>
+    </presentationConfigurations>
+    <presentationConfigurations xsi:type="id:IdConfiguration" prefix="UC-" count="3" verticalAlign="Center">
+      <datatype xsi:type="reqif:DatatypeDefinitionString" href="RMF_CustomerRequirementsSpecification.reqif#rmf-91af4973-33cb-4ec5-9921-a1a3da728fec"/>
+    </presentationConfigurations>
+  </presentationConfigurations>
+</configuration:ProrToolExtension>

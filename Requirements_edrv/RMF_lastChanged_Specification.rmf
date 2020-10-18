@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<configuration:ProrToolExtension xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0" xmlns:headline="http://pror.org/presentation/headline" xmlns:reqif="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd">
+  <specViewConfigurations>
+    <specification href="RMF_lastChanged_Specification.reqif#rmf-0f12aa0d-2fbd-4464-baae-78ccefc71b31"/>
+    <columns label="Description" width="473"/>
+    <columns label="Set After" width="427"/>
+    <leftHeaderColumn label="Lead Header Column" width="71"/>
+  </specViewConfigurations>
+  <generalConfiguration>
+    <labelConfiguration>
+      <defaultLabel>Description</defaultLabel>
+    </labelConfiguration>
+  </generalConfiguration>
+  <presentationConfigurations>
+    <presentationConfigurations xsi:type="headline:HeadlineConfiguration">
+      <datatype xsi:type="reqif:DatatypeDefinitionString" href="RMF_lastChanged_Specification.reqif#rmf-b04a30c7-7a5d-4518-9035-3f9bc6e8dbf3"/>
+    </presentationConfigurations>
+  </presentationConfigurations>
+</configuration:ProrToolExtension>
