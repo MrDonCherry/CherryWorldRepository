@@ -52,7 +52,12 @@
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.oa:OperationalCapabilityPkg"
           id="67e45dab-fb6c-4f4a-bd68-96854d6a4149" name="Operational Capabilities">
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="3c9d3d16-466c-4d6f-85d1-1ebf9fb1dc44" name="Automated simulation"/>
+            id="3c9d3d16-466c-4d6f-85d1-1ebf9fb1dc44" name="Automated simulation">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="6d2e5029-8537-41f1-bdd8-0a2c79a64955" included="#7ad25318-7753-42a9-9997-bb81e98ac7d8"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="81e52ac0-bb04-4b1d-bcba-ab69b71b6936" included="#c0725445-4742-4f77-bd9b-0e14ef0f8706"/>
+        </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="c0725445-4742-4f77-bd9b-0e14ef0f8706" name="Parameter study"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
@@ -70,7 +75,7 @@
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="0f5d48da-b5b7-4575-abcc-80071c5e019e" name="support incremental improvement"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="24d31e13-db58-4a0f-af12-d1a65d78a9f4" name="automated Mdoel validation"/>
+            id="24d31e13-db58-4a0f-af12-d1a65d78a9f4" name="automated Model validation"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="7ad25318-7753-42a9-9997-bb81e98ac7d8" name="Rapid Protoryping"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
@@ -82,17 +87,33 @@
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="2e349649-1e87-4a35-aeeb-34c9c43100c2" name="Support configuration managment"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="4dcf4ad4-8063-4fea-8d60-6c5ef4ff6202" name="Support Safety"/>
+            id="4dcf4ad4-8063-4fea-8d60-6c5ef4ff6202" name="Safe">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="6d3247cf-17fb-4bb0-b2c7-c237b8b5a7c7" included="#ca632f7e-87c1-4ef7-b610-387351e60da7"/>
+        </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="b996bf53-2b30-4fa3-9ee2-e2c327cc99dd" name="Support Security"/>
+            id="b996bf53-2b30-4fa3-9ee2-e2c327cc99dd" name="Secure"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
-            id="e015e473-90e7-40ee-b671-a92de15875c5" name="Reusability"/>
+            id="e015e473-90e7-40ee-b671-a92de15875c5" name="Reusability">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="b5596e30-ef2c-4058-8b53-ab0ffce7eff3" included="#52dd0909-5fa4-4d39-9551-6b4d9ba79670"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="f7ecf155-e9e1-44db-9afe-7e0434c4f8e7" included="#bade988d-fc20-4fad-ac82-f8a321f97eec"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="47de74d0-d446-4644-b96a-176532447ee0" included="#24d31e13-db58-4a0f-af12-d1a65d78a9f4"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="d38f2f55-077d-455b-8586-8466ee3e82fa" included="#4d81303f-4c92-4091-8e21-3defc6c5019a"/>
+        </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="9614480f-436e-4d51-9a66-00043a9c0ccd" name="Maintainability"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="d6633e16-3257-48e8-b50a-a7e21fb50e09" name="Values">
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="75a0918c-2f02-48ef-8f73-bfaea09b408b" included="#65c0014c-45a1-4ba6-97d0-8923359142d3"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="638834cd-2767-4f02-a956-b17396eab6ef" included="#4dcf4ad4-8063-4fea-8d60-6c5ef4ff6202"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="b24b3f05-4539-466c-af23-8f64615b84ab" included="#b996bf53-2b30-4fa3-9ee2-e2c327cc99dd"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="65c0014c-45a1-4ba6-97d0-8923359142d3" name="Sustainability">
@@ -102,11 +123,33 @@
               id="80ecf3b7-006c-4912-8e23-535892461f14" included="#b469f43c-fbdf-41f7-911d-4b8310e5d0ee"/>
           <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
               id="8654d15a-f082-4c92-b4bf-ebe75fdcd9f0" included="#9614480f-436e-4d51-9a66-00043a9c0ccd"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="f30efb7f-9075-447d-a196-ae6b14f05987" included="#2e349649-1e87-4a35-aeeb-34c9c43100c2"/>
         </ownedOperationalCapabilities>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="69a52918-e39a-466a-aa22-3a0a1545b12d" name="Repairability"/>
         <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
             id="b469f43c-fbdf-41f7-911d-4b8310e5d0ee" name="Standardization"/>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="67bc61c7-56e9-48ac-ba11-f246cd71cb87" name="Automation">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="33cbca6c-0490-46c0-97b6-1cd75e8f1828" included="#f2ba8611-18bd-4fcd-8410-7438e4406f82"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="15e6ed4a-04c7-4dd4-8356-0a586610c425" included="#e9b68881-08fd-4d92-8397-d998ec018e29"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="177fd9eb-2e97-4884-a018-2afa774a275f" included="#3c9d3d16-466c-4d6f-85d1-1ebf9fb1dc44"/>
+        </ownedOperationalCapabilities>
+        <ownedOperationalCapabilities xsi:type="org.polarsys.capella.core.data.oa:OperationalCapability"
+            id="2dcb8707-fa8b-4c6b-8b15-8b2428b8a980" name="Support Processes">
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="2859ebac-e65b-4c4f-bc18-8475cd326b92" included="#0d4efccc-5ffc-4d2d-be5a-55c5ad5e85a1"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="ff19e6e7-a331-4d68-a4aa-917722d1b62f" included="#5c715066-5d54-4f98-8293-aad5b100576d"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="72532258-c2f2-46e7-9f2e-ea563d7a098a" included="#0f5d48da-b5b7-4575-abcc-80071c5e019e"/>
+          <includes xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityInclude"
+              id="68e82a67-86d2-455a-afa7-6c7d087c8867" included="#438fccf0-a8a0-4f10-9a51-af18ddb25ad8"/>
+        </ownedOperationalCapabilities>
       </ownedAbstractCapabilityPkg>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
           id="d27096ab-9e12-4d9b-be4a-ca15ff5392d6" name="Interfaces"/>

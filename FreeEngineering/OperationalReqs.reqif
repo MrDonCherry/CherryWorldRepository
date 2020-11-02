@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0">
   <THE-HEADER>
-    <REQ-IF-HEADER IDENTIFIER="rmf-d049b42c-fcac-483a-932c-bc1c3decc8ca">
-      <COMMENT>Created by: MamaPapa</COMMENT>
+    <REQ-IF-HEADER IDENTIFIER="rmf-893dae45-4d4e-444a-8084-4ce646f7c1dc">
+      <COMMENT>MasterCherry</COMMENT>
       <CREATION-TIME>2020-10-21T19:35:16.311+02:00</CREATION-TIME>
       <REQ-IF-TOOL-ID>ProR (http://pror.org)</REQ-IF-TOOL-ID>
       <REQ-IF-VERSION>1.0.1</REQ-IF-VERSION>
@@ -14,15 +14,47 @@
     <REQ-IF-CONTENT>
       <DATATYPES>
         <DATATYPE-DEFINITION-STRING IDENTIFIER="_yDMHcBPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="T_String32k" MAX-LENGTH="32000"/>
+        <DATATYPE-DEFINITION-ENUMERATION IDENTIFIER="_vviDUBuFEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:31:11.863+01:00" LONG-NAME="Status">
+          <SPECIFIED-VALUES>
+            <ENUM-VALUE IDENTIFIER="_2_QZYBuFEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:32:05.485+01:00" LONG-NAME="Draft">
+              <PROPERTIES>
+                <EMBEDDED-VALUE/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+            <ENUM-VALUE IDENTIFIER="_5ytYcBuFEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:32:24.951+01:00" LONG-NAME="Reviewed">
+              <PROPERTIES>
+                <EMBEDDED-VALUE/>
+              </PROPERTIES>
+            </ENUM-VALUE>
+          </SPECIFIED-VALUES>
+        </DATATYPE-DEFINITION-ENUMERATION>
+        <DATATYPE-DEFINITION-DATE IDENTIFIER="_ZTh64BuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:35:54.441+01:00" LONG-NAME="Last Change"/>
       </DATATYPES>
       <SPEC-TYPES>
         <SPEC-OBJECT-TYPE IDENTIFIER="_yDMHcRPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="Requirement Type">
           <SPEC-ATTRIBUTES>
-            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_yDMHchPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="Description">
+            <ATTRIBUTE-DEFINITION-STRING DESC="safd" IDENTIFIER="_yDMHchPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="Description">
               <TYPE>
                 <DATATYPE-DEFINITION-STRING-REF>_yDMHcBPDEeu7-eOyV-DT4w</DATATYPE-DEFINITION-STRING-REF>
               </TYPE>
+              <DEFAULT-VALUE>
+                <ATTRIBUTE-VALUE-STRING THE-VALUE="Description">
+                  <DEFINITION>
+                    <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+                  </DEFINITION>
+                </ATTRIBUTE-VALUE-STRING>
+              </DEFAULT-VALUE>
             </ATTRIBUTE-DEFINITION-STRING>
+            <ATTRIBUTE-DEFINITION-ENUMERATION IDENTIFIER="_FWVMoBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:33:37.770+01:00" LONG-NAME="Status">
+              <TYPE>
+                <DATATYPE-DEFINITION-ENUMERATION-REF>_vviDUBuFEeu1Me2phBfQnQ</DATATYPE-DEFINITION-ENUMERATION-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-ENUMERATION>
+            <ATTRIBUTE-DEFINITION-DATE IDENTIFIER="_SorzgBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:35:11.471+01:00" LONG-NAME="Last Change">
+              <TYPE>
+                <DATATYPE-DEFINITION-DATE-REF>_ZTh64BuGEeu1Me2phBfQnQ</DATATYPE-DEFINITION-DATE-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-DATE>
           </SPEC-ATTRIBUTES>
         </SPEC-OBJECT-TYPE>
         <SPECIFICATION-TYPE IDENTIFIER="_yDMHcxPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="Specification Type">
@@ -36,9 +68,9 @@
         </SPECIFICATION-TYPE>
       </SPEC-TYPES>
       <SPEC-OBJECTS>
-        <SPEC-OBJECT IDENTIFIER="_yDMHdRPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00">
+        <SPEC-OBJECT IDENTIFIER="_yDMHdRPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-31T11:15:09.021+01:00">
           <VALUES>
-            <ATTRIBUTE-VALUE-STRING THE-VALUE="Start editing here.">
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The DevEnv shall enable creation of  simulation models out of operational scenario">
               <DEFINITION>
                 <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
               </DEFINITION>
@@ -48,11 +80,267 @@
             <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
           </TYPE>
         </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hBMwoBPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hBfrkRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hBpckRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hBpckxPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hBymgRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hB8XgRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hCGIgRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hCGIgxPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hCPScRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_hCZDcRPEEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:40:31.530+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_oiMyYRtjEeuhD5_jxhCJfg" LAST-CHANGE="2020-10-31T11:27:01.083+01:00"/>
+        <SPEC-OBJECT IDENTIFIER="_vytLkBtjEeuhD5_jxhCJfg" LAST-CHANGE="2020-10-31T11:27:48.348+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The DevEnv shall evaluate simulation results and create a report">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_BGJCQBtkEeuhD5_jxhCJfg" LAST-CHANGE="2020-10-31T11:29:51.040+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The DevEnv shall check the model if definitions are available in the model to enable simulations">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_Xy4SYBuEEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:21:24.339+01:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_4PgVwBuEEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:47:02.598+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Simulation parameters have to be defined.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <VALUES>
+                <ENUM-VALUE-REF>_2_QZYBuFEeu1Me2phBfQnQ</ENUM-VALUE-REF>
+              </VALUES>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_FWVMoBuGEeu1Me2phBfQnQ</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_q86MYBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:37:47.129+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Define fixed time interval">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_vk0LoBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:38:13.765+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Define simulation time">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6V5voBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6WIZIRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Output has to be defined">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6WTYQRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6WeXYRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Start values have to be defined">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6WovcRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Realize different transition conditions">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6WygcRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Execute different behaviout in different states">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6W84gRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Transition from scenario to state machine in Simulation ">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6XHQkRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Property values from actors">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6XRooRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T16:40:26.550+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Further Output Values (e.g. distance, weight) ">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_6XcAsRuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Output vector time">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHchPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_mOUg4BuHEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:44:30.888+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-ENUMERATION>
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-ENUMERATION-REF>_FWVMoBuGEeu1Me2phBfQnQ</ATTRIBUTE-DEFINITION-ENUMERATION-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-ENUMERATION>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_yDMHcRPDEeu7-eOyV-DT4w</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
       </SPEC-OBJECTS>
       <SPECIFICATIONS>
-        <SPECIFICATION IDENTIFIER="_yDMHdhPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00" LONG-NAME="Specification Document">
+        <SPECIFICATION IDENTIFIER="_yDMHdhPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-31T15:20:41.999+01:00" LONG-NAME="Specification Document">
           <VALUES>
-            <ATTRIBUTE-VALUE-STRING THE-VALUE="Requirements Document">
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Operational Requirements">
               <DEFINITION>
                 <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHdBPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
               </DEFINITION>
@@ -65,6 +353,132 @@
             <SPEC-HIERARCHY IDENTIFIER="_yDMHdxPDEeu7-eOyV-DT4w" LAST-CHANGE="2020-10-21T19:35:16.311+02:00">
               <OBJECT>
                 <SPEC-OBJECT-REF>_yDMHdRPDEeu7-eOyV-DT4w</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN/>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_vy2VgBtjEeuhD5_jxhCJfg" LAST-CHANGE="2020-10-31T11:27:48.348+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_vytLkBtjEeuhD5_jxhCJfg</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN/>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_BGb9MBtkEeuhD5_jxhCJfg" LAST-CHANGE="2020-10-31T11:29:51.040+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_BGJCQBtkEeuhD5_jxhCJfg</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+        <SPECIFICATION IDENTIFIER="_cyBs8BuEEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:22:00.944+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Requirements on Modelling">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHdBPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_yDMHcxPDEeu7-eOyV-DT4w</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_mOrGMBuHEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:44:30.888+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_mOUg4BuHEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+        <SPECIFICATION IDENTIFIER="_qCDYkBuEEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:23:25.640+01:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Functional">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_yDMHdBPDEeu7-eOyV-DT4w</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_yDMHcxPDEeu7-eOyV-DT4w</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_4P3iIBuEEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:25:01.009+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_4PgVwBuEEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN>
+                <SPEC-HIERARCHY IDENTIFIER="_q9NHUBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:37:47.129+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_q86MYBuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                </SPEC-HIERARCHY>
+                <SPEC-HIERARCHY IDENTIFIER="_vlJi0BuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:41:05.343+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_vk0LoBuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN>
+                    <SPEC-HIERARCHY IDENTIFIER="_6WeXYBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:41.977+01:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_6WTYQRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                    <SPEC-HIERARCHY IDENTIFIER="_75EykBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:39:52.377+01:00">
+                      <OBJECT>
+                        <SPEC-OBJECT-REF>_6V5voBuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                      </OBJECT>
+                    </SPEC-HIERARCHY>
+                  </CHILDREN>
+                </SPEC-HIERARCHY>
+                <SPEC-HIERARCHY IDENTIFIER="_6WIZIBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:40:05.805+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_6V5voBuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                </SPEC-HIERARCHY>
+              </CHILDREN>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_6WovcBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:45:54.673+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_6WeXYRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN>
+                <SPEC-HIERARCHY IDENTIFIER="_6XRooBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:47:08.920+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_6XHQkRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                </SPEC-HIERARCHY>
+              </CHILDREN>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_6WTYQBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:40:40.674+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_6WIZIRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN>
+                <SPEC-HIERARCHY IDENTIFIER="_6XmYwBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:42:34.799+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_6XcAsRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                </SPEC-HIERARCHY>
+                <SPEC-HIERARCHY IDENTIFIER="_6XcAsBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:42:49.709+01:00">
+                  <OBJECT>
+                    <SPEC-OBJECT-REF>_6XRooRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+                  </OBJECT>
+                  <CHILDREN/>
+                </SPEC-HIERARCHY>
+              </CHILDREN>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_6XHQkBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:47:54.765+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_6W84gRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN/>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_6W84gBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:49:32.229+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_6WygcRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
+              </OBJECT>
+              <CHILDREN/>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_6WygcBuGEeu1Me2phBfQnQ" LAST-CHANGE="2020-10-31T15:51:11.694+01:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_6WovcRuGEeu1Me2phBfQnQ</SPEC-OBJECT-REF>
               </OBJECT>
             </SPEC-HIERARCHY>
           </CHILDREN>
@@ -84,6 +498,25 @@
               <configuration:Column label="Lead Header Column" width="30"/>
             </configuration:leftHeaderColumn>
           </configuration:ProrSpecViewConfiguration>
+          <configuration:ProrSpecViewConfiguration specification="_cyBs8BuEEeu1Me2phBfQnQ">
+            <configuration:columns>
+              <configuration:Column label="Description" width="178"/>
+              <configuration:Column label="Status" width="183"/>
+            </configuration:columns>
+            <configuration:leftHeaderColumn>
+              <configuration:Column label="Lead Header Column" width="30"/>
+            </configuration:leftHeaderColumn>
+          </configuration:ProrSpecViewConfiguration>
+          <configuration:ProrSpecViewConfiguration specification="_qCDYkBuEEeu1Me2phBfQnQ">
+            <configuration:columns>
+              <configuration:Column label="Description" width="439"/>
+              <configuration:Column label="Status"/>
+              <configuration:Column label="Last Change" width="233"/>
+            </configuration:columns>
+            <configuration:leftHeaderColumn>
+              <configuration:Column label="Lead Header Column" width="30"/>
+            </configuration:leftHeaderColumn>
+          </configuration:ProrSpecViewConfiguration>
         </configuration:specViewConfigurations>
         <configuration:generalConfiguration>
           <configuration:ProrGeneralConfiguration>
@@ -94,6 +527,9 @@
             </configuration:labelConfiguration>
           </configuration:ProrGeneralConfiguration>
         </configuration:generalConfiguration>
+        <configuration:presentationConfigurations>
+          <configuration:ProrPresentationConfigurations/>
+        </configuration:presentationConfigurations>
       </configuration:ProrToolExtension>
     </REQ-IF-TOOL-EXTENSION>
   </TOOL-EXTENSIONS>
