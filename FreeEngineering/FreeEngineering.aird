@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/1.4.0" xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/1.4.0" xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/1.4.0" xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:description_2="http://www.eclipse.org/sirius/table/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:filter="http://www.eclipse.org/sirius/diagram/description/filter/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:org.polarsys.capella.core.data.cs="http://www.polarsys.org/capella/core/cs/1.4.0" xmlns:org.polarsys.capella.core.data.ctx="http://www.polarsys.org/capella/core/ctx/1.4.0" xmlns:org.polarsys.capella.core.data.interaction="http://www.polarsys.org/capella/core/interaction/1.4.0" xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0" xmlns:org.polarsys.capella.core.data.requirement="http://www.polarsys.org/capella/core/requirement/1.4.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:table="http://www.eclipse.org/sirius/table/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/table/description/1.1.0 http://www.eclipse.org/sirius/table/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/filter/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/filter http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
   <viewpoint:DAnalysis uid="_YBYtcA8YEeut6867VfijQQ" selectedViews="_YC37MA8YEeut6867VfijQQ _YDdxEA8YEeut6867VfijQQ _YI-jMA8YEeut6867VfijQQ _YLr48A8YEeut6867VfijQQ _YL4tQA8YEeut6867VfijQQ _YMXOYA8YEeut6867VfijQQ _YNPYIA8YEeut6867VfijQQ" version="14.3.1.202003261200">
     <semanticResources>FreeEngineering.afm</semanticResources>
     <semanticResources>FreeEngineering.melodymodeller</semanticResources>
@@ -12,9 +12,17 @@
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Function%20Breakdown']"/>
         <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#03077052-ade1-45c6-b6df-18e894342e3d"/>
       </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CqAcIh6uEeu9-7cewiYEQQ" name="New Requirements - System Functions" repPath="#_CpYKAB6uEeu9-7cewiYEQQ" changeId="40f561ec-7ab2-4405-ae68-513a9ebf2296">
+        <description xmi:type="description_2:CrossTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']"/>
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_YI-jMA8YEeut6867VfijQQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_4tP4ER6tEeu9-7cewiYEQQ" name="test" repPath="#_4spbIB6tEeu9-7cewiYEQQ" changeId="63f95b66-770b-4007-ba5f-e40077240b9e">
+        <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']"/>
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </ownedRepresentationDescriptors>
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="_YLr48A8YEeut6867VfijQQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/EPBS.odesign#//@ownedViewpoints[name='EPBS%20architecture']"/>
@@ -1514,4 +1522,113 @@
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='System%20Function%20Breakdown']/@defaultLayer"/>
     <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#03077052-ade1-45c6-b6df-18e894342e3d"/>
   </diagram:DSemanticDiagram>
+  <table:DTable uid="_4spbIB6tEeu9-7cewiYEQQ" headerColumnWidth="173">
+    <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+    <lines xmi:type="table:DLine" uid="_4s89IB6tEeu9-7cewiYEQQ" label="RequirementsPkg 1">
+      <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      <lines xmi:type="table:DLine" uid="_4s89Ih6tEeu9-7cewiYEQQ" label="SFR">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedLineMappings[name='Requirement%20Pkg']/@ownedSubLines[name='requirements%201']"/>
+        <cells xmi:type="table:DCell" uid="_4tGHKR6tEeu9-7cewiYEQQ" label="SystemFunctionalRequirement 1" column="_4tGHEB6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHKx6tEeu9-7cewiYEQQ" column="_4tGHEh6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHLR6tEeu9-7cewiYEQQ" column="_4tGHFB6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHLx6tEeu9-7cewiYEQQ" column="_4tGHFh6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHMR6tEeu9-7cewiYEQQ" column="_4tGHGB6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHMx6tEeu9-7cewiYEQQ" column="_4tGHGh6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+        <cells xmi:type="table:DCell" uid="_4tGHNR6tEeu9-7cewiYEQQ" column="_4tGHHB6tEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        </cells>
+      </lines>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedLineMappings[name='Requirement%20Pkg']"/>
+      <cells xmi:type="table:DCell" uid="_4tGHHh6tEeu9-7cewiYEQQ" label="RequirementsPkg 1" column="_4tGHEB6tEeu9-7cewiYEQQ">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_4tGHIR6tEeu9-7cewiYEQQ" column="_4tGHFB6tEeu9-7cewiYEQQ">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_4tGHIx6tEeu9-7cewiYEQQ" column="_4tGHFh6tEeu9-7cewiYEQQ">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </cells>
+      <cells xmi:type="table:DCell" uid="_4tGHJR6tEeu9-7cewiYEQQ" column="_4tGHGB6tEeu9-7cewiYEQQ">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      </cells>
+    </lines>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHEB6tEeu9-7cewiYEQQ" label="Name" cells="_4tGHHh6tEeu9-7cewiYEQQ _4tGHKR6tEeu9-7cewiYEQQ" width="221" featureName="name">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Name']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHEh6tEeu9-7cewiYEQQ" label="Requirement Id" cells="_4tGHKx6tEeu9-7cewiYEQQ" width="117" featureName="requirementId">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Requirement%20Id']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHFB6tEeu9-7cewiYEQQ" label="Summary" cells="_4tGHIR6tEeu9-7cewiYEQQ _4tGHLR6tEeu9-7cewiYEQQ" width="77" featureName="summary">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Summary']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHFh6tEeu9-7cewiYEQQ" label="Description" cells="_4tGHIx6tEeu9-7cewiYEQQ _4tGHLx6tEeu9-7cewiYEQQ" width="91" featureName="description">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Description']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHGB6tEeu9-7cewiYEQQ" label="Additional Information" cells="_4tGHJR6tEeu9-7cewiYEQQ _4tGHMR6tEeu9-7cewiYEQQ" width="167" featureName="additionalInformation">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Additional%20Information']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHGh6tEeu9-7cewiYEQQ" label="Verification Method" cells="_4tGHMx6tEeu9-7cewiYEQQ" width="146" featureName="verificationMethod">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Verification%20Method']"/>
+    </columns>
+    <columns xmi:type="table:DFeatureColumn" uid="_4tGHHB6tEeu9-7cewiYEQQ" label="Verification Phase" cells="_4tGHNR6tEeu9-7cewiYEQQ" width="132" featureName="verificationPhase">
+      <originMapping xmi:type="description_2:FeatureColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']/@ownedColumnMappings[name='Verification%20Phase']"/>
+    </columns>
+    <description xmi:type="description_2:EditionTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/common.odesign#//@ownedViewpoints[name='Common']/@ownedRepresentations[name='Requirements']"/>
+  </table:DTable>
+  <table:DTable uid="_CpYKAB6uEeu9-7cewiYEQQ" headerColumnWidth="278">
+    <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+    <lines xmi:type="table:DLine" uid="_CpYKAR6uEeu9-7cewiYEQQ" label="RequirementsPkg 1">
+      <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      <lines xmi:type="table:DLine" uid="_CpYKAx6uEeu9-7cewiYEQQ" label="SystemFunctionalRequirement 1">
+        <target xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement" href="FreeEngineering.melodymodeller#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"/>
+        <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']/@ownedLineMappings[name='Requirements']/@ownedSubLines[name='Sub%20Requirements']"/>
+        <cells xmi:type="table:DCell" uid="_Cp3SNB6uEeu9-7cewiYEQQ" label="X" column="_Cp3SMh6uEeu9-7cewiYEQQ">
+          <target xmi:type="org.polarsys.capella.core.data.requirement:RequirementsTrace" href="FreeEngineering.melodymodeller#8a469a1a-b823-4880-9f67-5bbeb79e5e7c"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsTrace" href="FreeEngineering.melodymodeller#8a469a1a-b823-4880-9f67-5bbeb79e5e7c"/>
+          <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#013e1a3d-7418-4fbd-8849-c62f2d21d217"/>
+          <intersectionMapping xmi:type="description_2:IntersectionMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']/@intersection.0"/>
+        </cells>
+      </lines>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg" href="FreeEngineering.melodymodeller#6bef1557-bc37-43f1-9112-8916c90aa04a"/>
+      <originMapping xmi:type="description_2:LineMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']/@ownedLineMappings[name='Requirements']"/>
+    </lines>
+    <columns xmi:type="table:DTargetColumn" uid="_Cp3SMB6uEeu9-7cewiYEQQ" label="Automated simulation" width="191">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#b4cd135b-174f-4576-a515-cbb5133ec217"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#b4cd135b-174f-4576-a515-cbb5133ec217"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <columns xmi:type="table:DTargetColumn" uid="_Cp3SMh6uEeu9-7cewiYEQQ" label="Idefnity items to be simulated" cells="_Cp3SNB6uEeu9-7cewiYEQQ" width="241">
+      <target xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#013e1a3d-7418-4fbd-8849-c62f2d21d217"/>
+      <semanticElements xmi:type="org.polarsys.capella.core.data.ctx:SystemFunction" href="FreeEngineering.melodymodeller#013e1a3d-7418-4fbd-8849-c62f2d21d217"/>
+      <originMapping xmi:type="description_2:ElementColumnMapping" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']/@ownedColumnMappings.0"/>
+    </columns>
+    <description xmi:type="description_2:CrossTableDescription" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/context.odesign#//@ownedViewpoints[name='System%20Analysis']/@ownedRepresentations[name='Requirements%20-%20System%20Functions']"/>
+  </table:DTable>
 </xmi:XMI>

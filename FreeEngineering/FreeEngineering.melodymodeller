@@ -17,6 +17,7 @@
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/1.4.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.4.0"
+    xmlns:org.polarsys.capella.core.data.requirement="http://www.polarsys.org/capella/core/requirement/1.4.0"
     id="03388cdb-2390-4b7c-b14d-56782fbf5e7d"
     name="FreeEngineering">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="4bee245a-1aac-4b45-af07-2773a519c971"/>
@@ -207,17 +208,29 @@
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
               id="b4cd135b-174f-4576-a515-cbb5133ec217" name="Automated simulation">
             <ownedFunctions xsi:type="org.polarsys.capella.core.data.ctx:SystemFunction"
-                id="013e1a3d-7418-4fbd-8849-c62f2d21d217" name="Idefnity items to be simulated"/>
+                id="013e1a3d-7418-4fbd-8849-c62f2d21d217" name="Idefnity items to be simulated">
+              <ownedTraces xsi:type="org.polarsys.capella.core.data.requirement:RequirementsTrace"
+                  id="8a469a1a-b823-4880-9f67-5bbeb79e5e7c" targetElement="#e47ba7ea-cb29-4a86-98cb-6b3109e04f0f"
+                  sourceElement="#013e1a3d-7418-4fbd-8849-c62f2d21d217"/>
+            </ownedFunctions>
           </ownedFunctions>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="18aa2dc2-0e57-4680-a6ae-8dfdb43640ef" targetElement="#43e67c70-3a94-4d60-947c-1caa3abaf9e3"
               sourceElement="#03077052-ade1-45c6-b6df-18e894342e3d"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
+      <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
+          id="6bef1557-bc37-43f1-9112-8916c90aa04a" name="RequirementsPkg 1">
+        <ownedRequirements xsi:type="org.polarsys.capella.core.data.requirement:SystemFunctionalRequirement"
+            id="e47ba7ea-cb29-4a86-98cb-6b3109e04f0f" name="SystemFunctionalRequirement 1"/>
+      </ownedRequirementPkgs>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
           id="e081c573-068f-4807-99d2-7c745d9f677b" name="Capabilities">
         <ownedCapabilities xsi:type="org.polarsys.capella.core.data.ctx:Capability"
             id="89abedce-31dd-4e68-bafd-105382462784" name="Automated simulation">
+          <ownedTraces xsi:type="org.polarsys.capella.core.data.capellacommon:GenericTrace"
+              id="dc7ebec9-9012-49ec-a519-d42bc032a633" targetElement="#013e1a3d-7418-4fbd-8849-c62f2d21d217"
+              sourceElement="#89abedce-31dd-4e68-bafd-105382462784"/>
           <ownedAbstractCapabilityRealizations xsi:type="org.polarsys.capella.core.data.interaction:AbstractCapabilityRealization"
               id="41ef9b82-ac4c-4067-a5ee-1d8e2367abe1" targetElement="#3c9d3d16-466c-4d6f-85d1-1ebf9fb1dc44"
               sourceElement="#89abedce-31dd-4e68-bafd-105382462784"/>
@@ -350,6 +363,8 @@
               sourceElement="#c1f65ce4-4db6-448f-a5da-b64a6de1164e"/>
         </ownedLogicalFunctions>
       </ownedFunctionPkg>
+      <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
+          id="b83b81b0-6b7a-4f80-a7c6-6f433f0d92c2" name="RequirementsLogic"/>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.la:CapabilityRealizationPkg"
           id="315d17ed-11d5-4191-b46e-f5eda7c77502" name="Capabilities"/>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
