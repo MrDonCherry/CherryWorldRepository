@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<vpd:VpdRoot xmlns:vpd="http://www.thalesgroup.com/vpd" name="Safety Integrity" version="1.0.0">
+  <enumerations id="_T8w68B8-Eeu_-JocgUimzg" name="ASIL">
+    <literals id="_bIUisB8-Eeu_-JocgUimzg" name="ASIL A"/>
+    <literals id="_dyXuIB8-Eeu_-JocgUimzg" name="ASIL B"/>
+    <literals id="_gzxCkB8-Eeu_-JocgUimzg" name="ASIL C"/>
+    <literals id="_jAqX8B8-Eeu_-JocgUimzg" name="ASIL D"/>
+  </enumerations>
+  <enumerations id="_l3n-AB8-Eeu_-JocgUimzg" name="Decomposed">
+    <literals id="_FfotkB8_Eeu_-JocgUimzg" name="Yes"/>
+    <literals id="_LRORsB8_Eeu_-JocgUimzg" name="No"/>
+  </enumerations>
+  <groups id="_vspiYB8-Eeu_-JocgUimzg" name="ASIL_Extension">
+    <scope>
+      <architectures>OPERATIONAL</architectures>
+      <architectures>SYSTEM</architectures>
+      <architectures>LOGICAL</architectures>
+      <architectures>PHYSICAL</architectures>
+    </scope>
+  </groups>
+</vpd:VpdRoot>

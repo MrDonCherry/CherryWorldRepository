@@ -17,6 +17,7 @@
     xmlns:org.polarsys.capella.core.data.la="http://www.polarsys.org/capella/core/la/1.4.0"
     xmlns:org.polarsys.capella.core.data.oa="http://www.polarsys.org/capella/core/oa/1.4.0"
     xmlns:org.polarsys.capella.core.data.pa="http://www.polarsys.org/capella/core/pa/1.4.0"
+    xmlns:org.polarsys.capella.core.data.requirement="http://www.polarsys.org/capella/core/requirement/1.4.0"
     id="228c5ce9-376b-4c6e-a55d-f661db0e79a3"
     name="EDrive">
   <ownedExtensions xsi:type="libraries:ModelInformation" id="f453c188-59ac-4bc4-b4b1-672b2c9c7f74"/>
@@ -437,6 +438,8 @@
               sourceElement="#2a9d39af-f5d2-4783-bece-40d1872a3560"/>
         </ownedSystemFunctions>
       </ownedFunctionPkg>
+      <ownedRequirementPkgs xsi:type="org.polarsys.capella.core.data.requirement:RequirementsPkg"
+          id="4bf207d0-dbef-4b1a-9e85-803586109017" name="RequirementsPkg 1"/>
       <ownedAbstractCapabilityPkg xsi:type="org.polarsys.capella.core.data.ctx:CapabilityPkg"
           id="b7bf0cf8-f3ac-4408-b2c4-128f9c798a24" name="Capabilities"/>
       <ownedInterfacePkg xsi:type="org.polarsys.capella.core.data.cs:InterfacePkg"
