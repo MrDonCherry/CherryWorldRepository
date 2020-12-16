@@ -688,7 +688,7 @@
               <ownedMinCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
                   id="d4d7b138-0b14-4354-8c6d-2003990a0d73" value="1"/>
               <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
-                  id="1aa3f61b-0413-423d-982a-1d7a713418d2" value="1"/>
+                  id="8608a582-5f9c-49a9-aa2b-acf41563e3a1" name="" value="*"/>
             </ownedMembers>
           </ownedAssociations>
           <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
@@ -812,7 +812,7 @@
             </ownedFeatures>
           </ownedClasses>
           <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
-              id="1246af69-2657-4e24-a35c-1cc272df9b8d" name="SubSystem Delivery Note">
+              id="1246af69-2657-4e24-a35c-1cc272df9b8d" name="VH.X=$Ic\xNq">
             <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
                 id="8e0bc951-d807-403b-99ba-b5e89e06dfe6" super="#0c9f5e4a-5a4e-4d67-8440-e7247da3fa09"
                 sub="#1246af69-2657-4e24-a35c-1cc272df9b8d"/>
@@ -895,6 +895,68 @@
               <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
                   id="11b1f709-3ae2-4919-8195-4555231dd39b" value="1"/>
             </ownedFeatures>
+          </ownedClasses>
+          <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
+              id="66e1d031-4650-43b5-9ff3-542e33c07420" name="Safety report">
+            <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+                id="43328e10-0234-4de3-965e-508fa20ce944" super="#ec9e1bce-2ce7-45f0-8a17-2de5391b40b9"
+                sub="#66e1d031-4650-43b5-9ff3-542e33c07420"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.information:Property"
+                id="ee84346e-3181-4bd7-8da6-b2fc37f65d4d" name="Usage restrictions"
+                abstractType="#76cc8933-c4f8-44b9-9654-18ba6ff8dbd9">
+              <ownedMinCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="c6849a4f-d38e-4ad5-9ec7-9fd9c6d53306" value="1"/>
+              <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="b64e0b67-cf9e-4520-85cc-6b8160f751da" value="1"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.information:Property"
+                id="e3d80f77-967b-4513-a2cd-bd73e02d547f" name="Safety Analysis reference"
+                abstractType="#76cc8933-c4f8-44b9-9654-18ba6ff8dbd9">
+              <ownedMinCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="baf79499-2fa7-403c-af09-adbb2507ba72" value="1"/>
+              <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="f308e634-e34c-474b-86a6-b780a61d2c7f" value="1"/>
+            </ownedFeatures>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.information:Property"
+                id="665439f8-3de4-4524-a32e-f5fdb1fbdb8f" name="Safety analysis result summary"
+                abstractType="#76cc8933-c4f8-44b9-9654-18ba6ff8dbd9">
+              <ownedMinCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="c881982f-a577-4d2f-aa03-3f3f45a3981c" value="1"/>
+              <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="7992ae2c-000c-454a-ba54-20bda70b54af" value="1"/>
+            </ownedFeatures>
+          </ownedClasses>
+          <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
+              id="8d33f8f0-9269-49e2-94be-3e39b6166978" name="Quality reoprt">
+            <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+                id="05860c3f-1608-401e-977d-a5dce828f62c" super="#ec9e1bce-2ce7-45f0-8a17-2de5391b40b9"
+                sub="#8d33f8f0-9269-49e2-94be-3e39b6166978"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.information:Property"
+                id="f45470c3-9746-46ad-a9f5-1f722eaa717d" name="Process fulfillment"
+                abstractType="#31a1bb1d-bb75-465e-be2f-d2e714089d41">
+              <ownedMinCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="195ef827-b8b7-42e4-a0a9-a460e53d0df1" value="1"/>
+              <ownedMaxCard xsi:type="org.polarsys.capella.core.data.information.datavalue:LiteralNumericValue"
+                  id="15c1d430-7193-42b1-baf3-6f03da5212b5" value="1"/>
+            </ownedFeatures>
+          </ownedClasses>
+          <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
+              id="fab85634-3ec9-444f-9129-71951a34b828" name="Security report">
+            <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+                id="1956fa66-5b16-4079-8e6e-39937130a993" super="#ec9e1bce-2ce7-45f0-8a17-2de5391b40b9"
+                sub="#fab85634-3ec9-444f-9129-71951a34b828"/>
+          </ownedClasses>
+          <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
+              id="987ec72e-c0c7-4f38-a336-afe2fecc74e5" name="Problem report">
+            <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+                id="4cb43ac3-9458-451d-84cd-b7da4a5b0568" super="#ec9e1bce-2ce7-45f0-8a17-2de5391b40b9"
+                sub="#987ec72e-c0c7-4f38-a336-afe2fecc74e5"/>
+          </ownedClasses>
+          <ownedClasses xsi:type="org.polarsys.capella.core.data.information:Class"
+              id="08f40006-3c08-415d-8fdb-0238fe95585a" name="Fucntoin implementation status">
+            <ownedGeneralizations xsi:type="org.polarsys.capella.core.data.capellacore:Generalization"
+                id="af21e4a5-a3cb-4e3a-84ef-c506ef5b4454" super="#ec9e1bce-2ce7-45f0-8a17-2de5391b40b9"
+                sub="#08f40006-3c08-415d-8fdb-0238fe95585a"/>
           </ownedClasses>
         </ownedDataPkgs>
         <ownedDataPkgs xsi:type="org.polarsys.capella.core.data.information:DataPkg"
