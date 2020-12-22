@@ -630,13 +630,13 @@
                   id="4c35abc7-424b-419e-826c-1796927eb669" name="FIP 2"/>
               <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
                   id="55a78015-8295-4472-98d3-61762de74c69" name="FOP 1"/>
-              <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
-                  id="2f23065b-8e79-456e-af14-b722939d43d3" name="Program flow monitoring">
-                <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
-                    id="4579295c-e522-4918-a745-a28e4fa832b9" name="FIP 1"/>
-                <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
-                    id="ff3da2d9-709d-4d6f-b565-85193f8ca70c" name="FOP 1"/>
-              </ownedFunctions>
+            </ownedFunctions>
+            <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+                id="2f23065b-8e79-456e-af14-b722939d43d3" name="Program flow monitoring">
+              <inputs xsi:type="org.polarsys.capella.core.data.fa:FunctionInputPort"
+                  id="4579295c-e522-4918-a745-a28e4fa832b9" name="FIP 1"/>
+              <outputs xsi:type="org.polarsys.capella.core.data.fa:FunctionOutputPort"
+                  id="ff3da2d9-709d-4d6f-b565-85193f8ca70c" name="FOP 1"/>
             </ownedFunctions>
           </ownedFunctions>
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
@@ -789,12 +789,26 @@
               <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="1f55c4d2-de05-422c-8c97-0465f39200fb"
                   name="Monitoring Module" abstractType="#31b3f2ab-2c40-4164-a169-df37aa91c8c1"/>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                  id="6418d65b-aa7c-4622-abac-180d782ef889" name="Main contoller"/>
+                  id="6418d65b-aa7c-4622-abac-180d782ef889" name="Main contoller">
+                <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                    id="bd01a790-278d-4992-a495-c33e392f8146" targetElement="#9c2d58d4-5413-4335-96e8-9e5f176271e0"
+                    sourceElement="#6418d65b-aa7c-4622-abac-180d782ef889"/>
+                <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                    id="dddb49c4-8c14-4e03-b55a-6c34f566491d" targetElement="#2f23065b-8e79-456e-af14-b722939d43d3"
+                    sourceElement="#6418d65b-aa7c-4622-abac-180d782ef889"/>
+                <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                    id="40e8f305-5aca-4124-983a-4b71bdfbe5df" targetElement="#491452d3-ae98-427b-97f9-1a64b47d91a0"
+                    sourceElement="#6418d65b-aa7c-4622-abac-180d782ef889"/>
+              </ownedLogicalComponents>
               <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
                   id="31b3f2ab-2c40-4164-a169-df37aa91c8c1" name="Monitoring Module"/>
             </ownedLogicalComponents>
             <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-                id="64b33996-c184-49ab-be50-1fbe1aaaa9a9" name="Actuator"/>
+                id="64b33996-c184-49ab-be50-1fbe1aaaa9a9" name="Actuator">
+              <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                  id="5b033073-a157-49af-806d-5c61feb5418e" targetElement="#5bab584d-39c9-418d-90a4-17d44ca8f4f9"
+                  sourceElement="#64b33996-c184-49ab-be50-1fbe1aaaa9a9"/>
+            </ownedLogicalComponents>
           </ownedLogicalComponents>
           <ownedLogicalComponentPkgs xsi:type="org.polarsys.capella.core.data.la:LogicalComponentPkg"
               id="80b000f6-ee10-4d34-b91d-fe719fcfef5f" name="LogicalComponentPkg 1"/>
